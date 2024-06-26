@@ -4,7 +4,7 @@ const nodemailer=require('nodemailer');
 
 
 //categorizing emails using groq-sdk ai api 
-const groq = new Groq({ apiKey:"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"});
+const groq = new Groq({ apiKey:"gxxxxuwkQ"});
 
 async function categorizeEmail(message) {
     const prompt=groq.chat.completions.create({
@@ -38,14 +38,14 @@ const sendReply = async (email, category) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth:{
-          user:"akshitpokhriyal@gmail.com",
-          pass:"yorh cbrm jazh xfbp"
+          user:"urmail@gmail.com",
+          pass:"1234 5678 9ABC DEFG"
         }
       });
     
       const mailOptions = {
-        from: 'akshitpokrhiyal@gmail.com',
-        to: "akshit.pokhriyal.3@gmail.com",
+        from: 'SOMEMAIL@gmail.com',
+        to: tomail@example.com,
         subject: 'Re: ' + email,
         text: reply,
       };
